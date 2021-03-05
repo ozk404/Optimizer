@@ -51,7 +51,7 @@ def PathCompress(path, width): ## This function compress a directory
 				print ("Total files: ",len(files))
 				for name in files:
 					fileName, fileSuffix = pt.splitext(name)
-					if fileSuffix.lower() == '.png' or fileSuffix.lower()  == '.jpg' or fileSuffi.lower()  == '.jpeg': 
+					if fileSuffix.lower() == '.png' or fileSuffix.lower()  == '.jpg' or fileSuffix.lower()  == '.jpeg': 
 						toFullPath = toFilePath + root[len(fromFilePath):]
 						toFullName = toFullPath + '/' + name
 						if pt.isdir(toFullPath):
